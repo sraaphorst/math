@@ -53,7 +53,7 @@ namespace vorpal::algebra {
 
         template<typename E>
         static AbstractSimplicialComplex create(E e) {
-            return AbstractSimplicialComplex{} + e;
+            return AbstractSimplicialComplex{edges_t{e}};
         }
 
         template<typename E, typename... Edges>
