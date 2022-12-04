@@ -19,7 +19,7 @@ namespace vorpal::algebra {
     class AbstractSimplicialComplex final {
     public:
         using vertex_t   = int;
-        using vertices_t = std::set<int>;
+        using vertices_t = std::set<vertex_t>;
         using edge_t     = std::set<int>;
         using edges_t    = std::set<edge_t>;
 
